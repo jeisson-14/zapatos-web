@@ -45,4 +45,17 @@ function eliminarProducto(index) {
 }
 
 function enviarWhatsApp() {
-  let mensaje = "Hola, quiero hacer este pedido:%0A%0
+  let mensaje = "Hola, quiero hacer este pedido:%0A%0A";
+  let total = 0;
+
+  carrito.forEach(p => {
+    mensaje += `- ${p.nombre} x ${p.cantidad} ($${p.precio})%0A`;
+    total += p.precio * p.cantidad;
+  });
+
+  mensaje += `%0A*Total:* $${total}`;
+
+  const telefono = "573123456789"; // CAMBIA A TU NÚMERO
+
+  window.open(`https://wa.me/${telefono}?text=${mensaje}`);
+}

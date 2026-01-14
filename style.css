@@ -43,6 +43,7 @@ button {
   cursor: pointer;
   font-size: 16px;
 }
+
 .carrito {
   background: white;
   padding: 20px;
@@ -63,6 +64,7 @@ button {
   object-fit: cover;
   border-radius: 5px;
 }
+
 .item-carrito button {
   background: red;
   color: white;
@@ -72,6 +74,7 @@ button {
   cursor: pointer;
   margin-top: 5px;
 }
+
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
