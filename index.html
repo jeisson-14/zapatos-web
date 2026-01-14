@@ -2,42 +2,67 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Tienda de Zapatos</title>
+  <title>Mi Tienda de Zapatos PRO</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- MENÚ -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <!-- ENCABEZADO -->
   <header>
     <h1>👟 Mi Tienda de Zapatos</h1>
-    <p>Calzado cómodo y de calidad</p>
+    <p>Calzado cómodo, moderno y de calidad</p>
   </header>
+
+  <!-- FILTROS -->
+  <div class="filtros">
+    <button onclick="filtrar('todos')">Todos</button>
+    <button onclick="filtrar('deportivo niño')">Deportivos niño</button>
+    <button onclick="filtrar('casualdeportivo niña')">casualdeportivo niña</button>
+    <button onclick="filtrar('formal niño')">formal niño</button>
+    <button onclick="filtrar('formal niña')">formal niña</button>
+  </div>
 
   <!-- CATÁLOGO -->
   <main class="catalogo">
 
-    <div class="producto">
-      <img src="img/zapato1.jpg" alt="Zapato Deportivo">
-      <h3>Zapato Deportivo</h3>
-      <p>$120.000</p>
-      <button onclick="agregarCarrito('Zapato Deportivo', 120000, 'img/zapato1.jpg')">
+    <div class="producto" data-categoria="deportivo ">
+      <img src="img/zapato1.jpg" alt="Zapato niño">
+      <h3>Deportivo niño</h3>
+      <p>$00</p>
+      <button onclick="agregarCarrito('Zapato Deportivo niño', 12.000, 'img/zapato1.jpg')">
         Comprar
       </button>
     </div>
 
-    <div class="producto">
-      <img src="img/zapato2.jpg" alt="Zapato Casual">
-      <h3>Zapato Casual</h3>
-      <p>$95.000</p>
+    <div class="producto" data-categoria="deportivo">
+      <img src="img/zapato2.jpg" alt="Zapato niña">
+      <h3>deportivo niña</h3>
+      <p>$00</p>
       <button onclick="agregarCarrito('Zapato Casual', 95000, 'img/zapato2.jpg')">
         Comprar
       </button>
     </div>
 
-    <div class="producto">
-      <img src="img/zapato3.jpg" alt="Zapato Formal">
-      <h3>Zapato Formal</h3>
-      <p>$150.000</p>
+    <div class="producto" data-categoria="formal niño">
+      <img src="img/zapato3.jpg" alt="Zapato niño">
+      <h3> Formal niño</h3>
+      <p>$00</p>
       <button onclick="agregarCarrito('Zapato Formal', 150000, 'img/zapato3.jpg')">
+        Comprar
+      </button>
+    </div>
+
+    <div class="producto" data-categoria="formal niña">
+      <img src="img/zapato4.jpg" alt="zapato niña">
+      <h3>formal niña</h3>
+      <p>$00</p>
+      <button onclick="agregarCarrito('Zapato Urbano', 110000, 'img/zapato4.jpg')">
         Comprar
       </button>
     </div>

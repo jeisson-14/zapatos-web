@@ -59,3 +59,14 @@ function enviarWhatsApp() {
 
   window.open(`https://wa.me/${telefono}?text=${mensaje}`);
 }
+function filtrar(categoria) {
+  const productos = document.querySelectorAll(".producto");
+
+  productos.forEach(p => {
+    if (categoria === "todos" || p.dataset.categoria === categoria) {
+      p.style.display = "block";
+    } else {
+      p.style.display = "none";
+    }
+  });
+}
