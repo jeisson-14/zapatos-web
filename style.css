@@ -1,14 +1,19 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  background: #f2f2f2;
   margin: 0;
 }
 
 header {
-  background: #111;
+  background: linear-gradient(90deg, #000, #333);
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
 }
 
 .catalogo {
@@ -21,9 +26,14 @@ header {
 .producto {
   background: white;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.producto:hover {
+  transform: scale(1.03);
 }
 
 .producto img {
@@ -33,22 +43,37 @@ header {
   border-radius: 10px;
 }
 
+.producto h3 {
+  margin: 10px 0 5px;
+}
+
+.producto p {
+  color: #25D366;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 button {
   background: #25D366;
   color: white;
   border: none;
   padding: 10px;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+}
+
+button:hover {
+  background: #1ebe5d;
 }
 
 .carrito {
   background: white;
   padding: 20px;
   margin: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .item-carrito {
@@ -85,4 +110,5 @@ button {
   padding: 15px;
   border-radius: 50%;
   text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
