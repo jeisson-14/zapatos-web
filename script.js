@@ -60,7 +60,7 @@ function enviarWhatsApp() {
 
   mensaje += `%0A*Total:* $${total}`;
 
-  const telefono = "573105822406"; // TU NÚMERO REAL
+  const telefono = "573105822406"; // ✅ TU NÚMERO REAL
 
   window.open(`https://wa.me/${telefono}?text=${mensaje}`, "_blank");
 }
