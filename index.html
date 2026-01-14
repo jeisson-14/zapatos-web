@@ -1,56 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Tienda de Zapatos</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Mi Tienda de Zapatos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Encabezado -->
-    <header>
-        <h1>Mi Tienda de Zapatos</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#catalogo">Catálogo</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>👟 Mi Tienda de Zapatos</h1>
+    <p>Calzado cómodo y de calidad</p>
+  </header>
 
-    <!-- Sección del catálogo -->
-    <main>
-        <section id="catalogo">
-            <h2>Catálogo de Zapatos</h2>
-            <div class="productos">
-                <!-- Productos generados por JS -->
-            </div>
-        </section>
+  <main class="catalogo">
 
-        <!-- Sección del carrito -->
-        <section id="carrito">
-            <h2>Carrito de Compras</h2>
-            <div class="carrito-items">
-                <!-- Productos añadidos al carrito -->
-            </div>
-            <p class="total">Total: $0</p>
-        </section>
+    <div class="producto">
+      <img src="img/zapato1.jpg" alt="Zapato 1">
+      <h3>Zapato Deportivo</h3>
+      <p>$120.000</p>
+      <button onclick="agregarCarrito('Zapato Deportivo', 120000, 'img/zapato1.jpg')">
+        Comprar
+      </button>
+    </div>
 
-        <!-- Sección de contacto -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Teléfono: 310-582-2406</p>
-            <p>Email: tienda@zapatos.com</p>
-        </section>
-    </main>
-
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2026 Mi Tienda de Zapatos</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    <div class="producto">
+      <img src="img/zapato2.jpg" alt="Zapato 2">
+      <h3>Zapato Casual</h3>
+      <p>$95.000</p>
+      <button onclick="agregarCarrito('
