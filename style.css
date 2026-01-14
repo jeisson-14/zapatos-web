@@ -126,3 +126,37 @@ button:hover {
     padding: 12px;
   }
 }
+.logo {
+  width: 90px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.header {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-color: #000;
+  width: 100%;
+  height: 260px;        /* Altura de la franja negra */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* Hace que cubra toda la franja */
+}
