@@ -43,3 +43,23 @@ button {
   cursor: pointer;
   font-size: 16px;
 }
+.carrito {
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.item-carrito {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item-carrito img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 5px;
+}
