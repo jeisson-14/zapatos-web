@@ -1,0 +1,107 @@
+/* --- Estilos generales --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* --- Encabezado --- */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Secciones principales --- */
+main {
+    padding: 20px;
+}
+
+/* --- Productos --- */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.producto {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+/* --- Carrito --- */
+#carrito {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.carrito-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+.carrito-item button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* --- Pie de página --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
