@@ -55,10 +55,11 @@ function enviarWhatsApp() {
 
   mensaje += `%0A*Total:* $${total}`;
 
-  const telefono = "573123456789"; // CAMBIA A TU NÚMERO
+  const telefono = "573105822406"; // TU NÚMERO CORRECTO
 
   window.open(`https://wa.me/${telefono}?text=${mensaje}`);
 }
+
 function filtrar(categoria) {
   const productos = document.querySelectorAll(".producto");
 
