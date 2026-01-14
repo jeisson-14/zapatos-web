@@ -25,7 +25,7 @@ function mostrarCarrito() {
 
     lista.innerHTML += `
       <div class="item-carrito">
-        <img src="${producto.imagen}">
+        <img src="${producto.imagen}" width="60">
         <div>
           <p><strong>${producto.nombre}</strong></p>
           <p>$${producto.precio} x ${producto.cantidad}</p>
@@ -45,6 +45,11 @@ function eliminarProducto(index) {
 }
 
 function enviarWhatsApp() {
+  if (carrito.length === 0) {
+    alert("Tu carrito está vacío");
+    return;
+  }
+
   let mensaje = "Hola, quiero hacer este pedido:%0A%0A";
   let total = 0;
 
@@ -55,9 +60,9 @@ function enviarWhatsApp() {
 
   mensaje += `%0A*Total:* $${total}`;
 
-  const telefono = "573105822406"; // TU NÚMERO CORRECTO
+  const telefono = "573105822406"; // TU NÚMERO REAL
 
-  window.open(`https://wa.me/${telefono}?text=${mensaje}`);
+  window.open(`https://wa.me/${telefono}?text=${mensaje}`, "_blank");
 }
 
 function filtrar(categoria) {
